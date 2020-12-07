@@ -14,7 +14,7 @@ export default function Home() {
       <div className={styles.cover}></div>
       <main className={styles.main}>
         <h1 className={styles.title}>Coming Soon</h1>
-        <img src="/stickerpeel.png" alt="Vercel Logo" className={styles.logo} />
+        <img src="/dangerketchup/stickerpeel.png" className={styles.logo} />
         
         <div className={styles.brandsBar}>
           <FontAwesomeIcon icon={faFacebook} className={styles.brandIcon} color="white" />
