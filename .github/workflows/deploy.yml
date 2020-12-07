@@ -1,0 +1,27 @@
+name: Deploy
+on: 
+  push:
+    tags: 
+      - v*
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1 
+        with:
+          persist-credentials: false
+          
+      - uses: bahmutov/npm-install@v1
+      
+      - name: Install and Build 🔧 
+        run: |
+          npx next build
+          npx next export
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
