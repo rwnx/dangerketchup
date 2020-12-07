@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.cover}></div>
       <main className={styles.main}>
         <h1 className={styles.title}>Coming Soon</h1>
-        <Image src="/stickerpeel.png" width={350} height={350} className={styles.logo} />
+        <img src="/stickerpeel.png" width={350} height={350} className={styles.logo} />
         
         <div className={styles.brandsBar}>
           <a href="https://www.facebook.com/JTsDangerKetchup"><FontAwesomeIcon icon={faFacebook} className={styles.brandIcon} color="white" /></a>
