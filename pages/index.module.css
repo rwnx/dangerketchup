@@ -4,7 +4,7 @@
   justify-content: center;
   height:100%;
   width:100%;
-  background-image: url("/dangerketchup/chilli.jpg");
+  background-image: url("/chilli.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -16,19 +16,20 @@
   position: absolute;
   width:100%;
   height:100%;
-  backdrop-filter: grayscale(30%) blur(5px);
+  backdrop-filter: brightness(50%) grayscale(20%) blur(3px);
   z-index: 0;
 }
 .main {
   z-index: 1;
-
 }
 .title {
   color: white;
   font-family: 'Knewave', cursive;
   font-size: 60px;
   margin-bottom:0.24em;
+  margin-top:-20px;
   text-align:center;
+  text-shadow: 5px 5px #F16C2F;
 
 }
 

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from './index.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,11 +15,11 @@ export default function Home() {
       <div className={styles.cover}></div>
       <main className={styles.main}>
         <h1 className={styles.title}>Coming Soon</h1>
-        <img src="/dangerketchup/stickerpeel.png" className={styles.logo} />
+        <Image src="/stickerpeel.png" width={350} height={350} className={styles.logo} />
         
         <div className={styles.brandsBar}>
-          <FontAwesomeIcon icon={faFacebook} className={styles.brandIcon} color="white" />
-          <FontAwesomeIcon icon={faInstagram} className={styles.brandIcon} color="white" />
+          <a href="https://www.facebook.com/JTsDangerKetchup"><FontAwesomeIcon icon={faFacebook} className={styles.brandIcon} color="white" /></a>
+          <a href="https://www.instagram.com/jtsdangerketchup/"><FontAwesomeIcon icon={faInstagram} className={styles.brandIcon} color="white" /></a>
         </div>
       </main>
     </div>
